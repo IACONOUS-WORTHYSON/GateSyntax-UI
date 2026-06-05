@@ -14,9 +14,9 @@
                     75th Avenue License v2.0
 
   Issuance No.:   75AV-2-__________
-  Issued to:      [INVENTOR FULL NAME / PSEUDONYM]
-  Project:        [PROJECT / WORK NAME]
-  Date of Issue:  [DD/MM/YYYY]
+  Issued to:      IACONOUS WORTHYSON
+  Project:        GateSyntax / HERMES -- Complete Release
+  Date of Issue:  05/06/2026
   Issued by:      IACONOUS WORTHYSON . 75th Avenue
 
   This certificate is a unique instrument.
@@ -190,7 +190,7 @@ framework; its enforcement is the responsibility of the license holder.
 S 5.1  All uses of the Works must carry the following notice,
 unmodified:
 
-    [Work Name] -- Created by [Inventor Name] . Licensed under
+    GateSyntax / HERMES -- Complete Release -- Created by IACONOUS WORTHYSON . Licensed under
     The 75th Avenue License v2.0 . Issuance No. 75AV-2-__________
 
 S 5.2  The 75th Avenue name, the name IACONOUS WORTHYSON, and the
