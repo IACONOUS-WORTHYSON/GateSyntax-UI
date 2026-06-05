@@ -1,4 +1,4 @@
-﻿# GateSyntax / HERMES User Interface
+# GateSyntax / HERMES User Interface
 
 ---
 
@@ -7,24 +7,24 @@ ISSUE \ DECLASSIFICATION NUMBER 8
 THE GATESYNTAX \ HERMES USER INTERFACE
 ```
 
-**Coded by Claude Code  ֲ·  Designed by IACONOUS WORTHYSON**
+**Coded by Claude Code -- Designed by IACONOUS WORTHYSON**
 
 ---
 
-### ג– YOU ARE HEREBY GRANTED
+### // YOU ARE HEREBY GRANTED
 
 a piece of an **un-patentable novel architecture** designed by
-*Iaconous Worthyson* ג€” published under `LICENSE.md` as an
+*Iaconous Worthyson* -- published under `LICENSE.md` as an
 ***as-is*** publication.
 
-**ANY LIABILITY** ג€” code not coming out correctly; libs not aligning;
-and more ג€” **IS A *YOU* RESPONSIBILITY.**
+**ANY LIABILITY** -- code not coming out correctly; libs not aligning;
+and more -- **IS A *YOU* RESPONSIBILITY.**
 
 ---
 
-### ג¨ HOW TO USE THIS
+### >> HOW TO USE THIS
 
-The prompt below is for **Claude Code** ג€” meaning you can simply
+The prompt below is for **Claude Code** -- meaning you can simply
 `CTRL+C` && `CTRL+V` and then just run it.
 
 Or copy the code using **GIT** and build it using your own fingers
@@ -52,11 +52,11 @@ SLIDER SpeedSlider :: IN [Col] :: MIN 0 :: MAX 200 :: VALUE [SPEED]
 BUTTON Reset       :: IN [Col] :: LABEL "Reset"   :: ON CLICK /SPEED :: 0\
 ```
 
-That file ג€” unchanged ג€” renders in WPF, PyQt, JavaFX, React, and vanilla DOM.
+That file -- unchanged -- renders in WPF, PyQt, JavaFX, React, and vanilla DOM.
 The syntax reads the way you would describe the UI out loud.
 
 > *"I want a slider that goes from 0 to 200"*
-> ג†’ `SLIDER Speed :: MIN 0 :: MAX 200 :: VALUE [SPEED]`
+>  `SLIDER Speed :: MIN 0 :: MAX 200 :: VALUE [SPEED]`
 
 ---
 
@@ -74,7 +74,7 @@ The syntax reads the way you would describe the UI out loud.
 
 ### The Integrador
 
-A domain-agnostic live-binding layer ג€” one per language ג€” in `GateSyntax/`.
+A domain-agnostic live-binding layer -- one per language -- in `GateSyntax/`.
 Drop it into any running program to get a live GateSyntax control panel
 automatically, with no UI code in the host.
 
@@ -94,7 +94,7 @@ Works the same way in C#, Java, JavaScript, TypeScript, and React.
 
 ---
 
-## The .ui Syntax ג€” Complete Reference
+## The .ui Syntax -- Complete Reference
 
 ### Lines
 
@@ -104,7 +104,7 @@ Blank lines and lines starting with `//` or `#` are ignored.
 ```
 // State variable
 /VARIABLE_NAME :: default_value\
-/VARIABLE_NAME :: default_value :: SAVED\     ג† persists across sessions
+/VARIABLE_NAME :: default_value :: SAVED\      persists across sessions
 
 // Element
 NOUN  ElementId :: PROP value :: PROP value :: ON EVENT /VAR :: expr\
@@ -118,7 +118,7 @@ Tokens are always separated by ` :: ` (space-colon-colon-space).
 42                     literal number
 "hello"                literal string
 TRUE  /  FALSE         literal boolean
-[VAR_NAME]             live reference ג€” reads from state
+[VAR_NAME]             live reference -- reads from state
 [A] + [B]              arithmetic
 "Count: " + [COUNT]    string concat
 [SCORE] * 2            number arithmetic
@@ -129,17 +129,17 @@ TRUE  /  FALSE         literal boolean
 | Noun | Maps to | Key props |
 |---|---|---|
 | `WINDOW` | Root window | `TITLE` |
-| `COL` / `STACK` | Vertical layout | ג€” |
-| `ROW` | Horizontal layout | ג€” |
+| `COL` / `STACK` | Vertical layout | -- |
+| `ROW` | Horizontal layout | -- |
 | `GRID` | Grid layout | `COLS` |
 | `PANEL` | Titled group | `LABEL` |
-| `SCROLL` | Scrollable area | ג€” |
-| `TABS` | Tab container | ג€” |
+| `SCROLL` | Scrollable area | -- |
+| `TABS` | Tab container | -- |
 | `TAB` | One tab | `LABEL` |
 | `LABEL` | Text display | `TEXT` |
 | `BUTTON` | Button | `LABEL` |
 | `INPUT` | Text field | `HINT` |
-| `TEXTAREA` | Multi-line input | ג€” |
+| `TEXTAREA` | Multi-line input | -- |
 | `CHECK` | Checkbox | `LABEL`, `VALUE` |
 | `TOGGLE` | Toggle switch | `VALUE` |
 | `SLIDER` | Range slider | `MIN`, `MAX`, `VALUE` |
@@ -147,7 +147,7 @@ TRUE  /  FALSE         literal boolean
 | `GAUGE` | Fill meter | `MAX`, `VALUE`, `GAUGELABEL`, `STROKE` |
 | `LIST` | Selectable list | `HEIGHT` |
 | `ITEM` | List item | `LABEL` |
-| `RULE` / `SEPARATOR` | Horizontal line | ג€” |
+| `RULE` / `SEPARATOR` | Horizontal line | -- |
 
 ### Universal Props (any element)
 
@@ -155,8 +155,8 @@ TRUE  /  FALSE         literal boolean
 |---|---|
 | `IN [id]` | Set parent (required) |
 | `VALUE` | Initial or live-bound value |
-| `ENABLED` | `TRUE`/`FALSE` ג€” enable / disable |
-| `VISIBLE` | `TRUE`/`FALSE` ג€” show / hide |
+| `ENABLED` | `TRUE`/`FALSE` -- enable / disable |
+| `VISIBLE` | `TRUE`/`FALSE` -- show / hide |
 | `WIDTH` / `HEIGHT` | Fixed dimensions |
 | `BG` / `COLOR` / `FG` | Background / foreground color |
 | `STYLE "h1"` | Style class (`h1`, `h2`, `muted`) |
@@ -218,7 +218,7 @@ TAB  TabB     :: IN [MainTabs] :: LABEL "Advanced"
 ## Build Your Own
 
 This section is the build guide. It is structured as a **prompt for
-Claude Code** ג€” paste it directly into a new Claude Code session to
+Claude Code** -- paste it directly into a new Claude Code session to
 build a complete GateSyntax runtime in any language you specify.
 
 > **To use:** Open a new folder, start Claude Code, paste everything
@@ -227,7 +227,7 @@ build a complete GateSyntax runtime in any language you specify.
 
 ---
 
-# GateSyntax ג€” Claude Code Build Prompt
+# GateSyntax -- Claude Code Build Prompt
 
 You are building a **GateSyntax runtime implementation** from scratch.
 
@@ -241,19 +241,19 @@ working code in the language and UI toolkit the user specifies.
 A GateSyntax runtime has nine modules. They form a strict dependency chain:
 
 ```
- 1. ValueExpr       ג€” immutable expression types
- 2. SyntaxNode      ג€” immutable AST node types
-        ג†“
- 3. SyntaxParser    ג€” text ג†’ SyntaxNode[]
- 4. StateStore      ג€” reactive key-value store
-        ג†“
- 5. ExpressionEvaluator  ג€” ValueExpr + StateStore ג†’ value
- 6. LiveBinding          ג€” which vars does an expression depend on?
-        ג†“
- 7. UIRuntime       ג€” builds widget tree, wires bindings, dispatches events
-        ג†“
- 8. GateSyntaxBuilder    ג€” fluent API wrapping everything above
-        ג†“
+ 1. ValueExpr       -- immutable expression types
+ 2. SyntaxNode      -- immutable AST node types
+        
+ 3. SyntaxParser    -- text  SyntaxNode[]
+ 4. StateStore      -- reactive key-value store
+        
+ 5. ExpressionEvaluator  -- ValueExpr + StateStore  value
+ 6. LiveBinding          -- which vars does an expression depend on?
+        
+ 7. UIRuntime       -- builds widget tree, wires bindings, dispatches events
+        
+ 8. GateSyntaxBuilder    -- fluent API wrapping everything above
+        
  9. Main entry point
 ```
 
@@ -262,19 +262,19 @@ A broken parser corrupts everything above it.
 
 ---
 
-## Module 1 & 2 ג€” Immutable Data Types
+## Module 1 & 2 -- Immutable Data Types
 
 Use the language's best tool for sealed/discriminated types.
 All types must be **immutable**.
 
 ```
-// Value expressions ג€” right-hand side of any property
+// Value expressions -- right-hand side of any property
 ValueExpr =
     LiteralExpr  { value }              -- string, number, boolean
   | RefExpr      { varName }            -- [VAR] reads live state
   | BinaryExpr   { left, op, right }    -- arithmetic / concat
 
-// Syntax nodes ג€” one per non-blank, non-comment line in a .ui file
+// Syntax nodes -- one per non-blank, non-comment line in a .ui file
 SyntaxNode =
     StateDecl    { name, defaultValue, saved }
   | ElementDecl  { noun, id, props[], behaviors[] }
@@ -284,24 +284,24 @@ Behavior  = { event: string, targetVar: string, expression: string }
 ```
 
 **Language guidance:**
-- Java ג†’ sealed interfaces + records
-- C# / Kotlin ג†’ sealed classes / records
-- Python ג†’ dataclasses or attrs, frozen=True
-- TypeScript ג†’ discriminated union interfaces
-- Rust ג†’ enums with fields
+- Java  sealed interfaces + records
+- C# / Kotlin  sealed classes / records
+- Python  dataclasses or attrs, frozen=True
+- TypeScript  discriminated union interfaces
+- Rust  enums with fields
 
 **Verify:** Construct one of each type by hand and print it.
 
 ---
 
-## Module 3 ג€” SyntaxParser
+## Module 3 -- SyntaxParser
 
 Entry point: `parse_content(text) -> SyntaxNode[]`
 
 ### Line classification
 
 ```
-separator  =  " :: "   (space colon colon space ג€” never just ":")
+separator  =  " :: "   (space colon colon space -- never just ":")
 
 skip if:   line is blank
            line starts with "//"
@@ -411,7 +411,7 @@ Expected output:
 
 ---
 
-## Module 4 ג€” StateStore
+## Module 4 -- StateStore
 
 A reactive key-value store. Keys are always UPPER-CASED internally.
 
@@ -445,13 +445,13 @@ subscribe(name, fn)
 ```
 store.set("X", 1)
 store.subscribe("X", v -> assert v == 2)
-store.set("X", 2)   -- triggers subscriber ג“
-store.set("X", 2)   -- no-op, does NOT trigger again ג“
+store.set("X", 2)   -- triggers subscriber 
+store.set("X", 2)   -- no-op, does NOT trigger again 
 ```
 
 ---
 
-## Module 5 ג€” ExpressionEvaluator
+## Module 5 -- ExpressionEvaluator
 
 ```
 evaluate(expr, store) -> any
@@ -488,7 +488,7 @@ evaluate( BinaryExpr(Literal("Hello "), "+", Ref("A")) )    -> "Hello 10"
 
 ---
 
-## Module 6 ג€” LiveBinding
+## Module 6 -- LiveBinding
 
 One function. Walks an expression tree; returns every variable name found.
 
@@ -509,11 +509,11 @@ collect_refs(
 
 ---
 
-## Module 7 ג€” UIRuntime
+## Module 7 -- UIRuntime
 
 The largest module. Four sequential responsibilities.
 
-### 7a ג€” Index the node tree (on construction)
+### 7a -- Index the node tree (on construction)
 
 ```
 FOR each node IN nodes:
@@ -534,7 +534,7 @@ FOR each node IN nodes:
         children_map[in_prop.value.varName].append(node.id)
 ```
 
-### 7b ג€” Build the widget tree
+### 7b -- Build the widget tree
 
 ```
 build_root()
@@ -582,7 +582,7 @@ create_widget(node, children) -> Widget
         _                     -> fallback_container(children)
 ```
 
-### 7c ג€” Wire live bindings (call after widget tree is mounted)
+### 7c -- Wire live bindings (call after widget tree is mounted)
 
 ```
 FOR each (id, node) IN node_map:
@@ -622,7 +622,7 @@ mark_updating(id)   updating.add(id)
 unmark_updating(id) updating.remove(id)
 ```
 
-### 7d ג€” Event dispatch
+### 7d -- Event dispatch
 
 ```
 handle_event(widget_id, event, element_value = null)
@@ -657,16 +657,16 @@ handle_event(widget_id, event, element_value = null)
 | `MSG_WARN` | Show warning notification; set result |
 | `MSG_ERROR` | Show error notification; set result |
 | `MSG_CONFIRM` | Show confirm; set `DIALOG_MSG_RESULT = "True"` |
-| `ASYNC_START` | Background task: push `ASYNC_PROGRESS` 0ג†’100 over ~2s, set `ASYNC_STATUS` |
+| `ASYNC_START` | Background task: push `ASYNC_PROGRESS` 0100 over ~2s, set `ASYNC_STATUS` |
 | `CLIP_COPY` | Copy `CLIP_TEXT` to system clipboard |
 
 **Verify the full module:**
 Load `UI/controls.ui`. Moving the slider must update both the label
-and the progress bar live ג€” no code beyond the `.ui` file.
+and the progress bar live -- no code beyond the `.ui` file.
 
 ---
 
-## Module 8 ג€” GateSyntaxBuilder (Fluent API)
+## Module 8 -- GateSyntaxBuilder (Fluent API)
 
 ```
 BUILDER fields:
@@ -704,7 +704,7 @@ build_with_state() -> (App, StateStore)
 
 ---
 
-## Module 9 ג€” Entry Point
+## Module 9 -- Entry Point
 
 ```
 ui_dir  = <project_root>/UI
@@ -737,10 +737,10 @@ generate_ui(bindings, title) -> string
 run(bindings)
     app, store = build_from_content(generate_ui(bindings))
     for each binding with setter:
-        store.subscribe("GS_" + name, v -> setter(v))   -- UI ג†’ host
+        store.subscribe("GS_" + name, v -> setter(v))   -- UI  host
     start background loop at poll_hz:
         for each binding with getter:
-            store.set("GS_" + name, getter())            -- host ג†’ UI
+            store.set("GS_" + name, getter())            -- host  UI
     app.run()
 ```
 
@@ -756,7 +756,7 @@ run(bindings)
     theme.<css|qss>     dark theme (see colors below)
   UI/
     main.ui             WINDOW + TABS shell
-    controls.ui         slider ג†” progress, checkbox, toggle
+    controls.ui         slider  progress, checkbox, toggle
     binding.ui          two-way inputs, live preview, counter
     commands.ui         notifications, async worker, gauge
     data.ui             list selection, multi-gauge panel
@@ -769,9 +769,9 @@ primary     #6688cc     accent    #88aadd     text      #e0e0e0
 muted       #888888     success   #55cc77     error     #ff5555
 ```
 
-Style class `STYLE "h1"` ג†’ bold, primary color, larger font.
-Style class `STYLE "h2"` ג†’ bold, accent color.
-Style class `STYLE "muted"` ג†’ muted color.
+Style class `STYLE "h1"`  bold, primary color, larger font.
+Style class `STYLE "h2"`  bold, accent color.
+Style class `STYLE "muted"`  muted color.
 
 ---
 
@@ -783,12 +783,12 @@ Before the implementation is complete, every item below must pass.
 - [ ] 0% / 50% / 100% buttons snap the slider
 - [ ] Checkbox text reflects `TRUE`/`FALSE` live
 - [ ] Typing in Name field updates preview label instantly
-- [ ] Counter `+` / `גˆ’` buttons work; Reset returns to 0
-- [ ] Start async task animates progress bar 0 ג†’ 100
+- [ ] Counter `+` / `` buttons work; Reset returns to 0
+- [ ] Start async task animates progress bar 0  100
 - [ ] Info / Warn / Error buttons trigger notifications
 - [ ] Gauge slider drives gauge widget live
 - [ ] Clicking a list item updates the "Selected:" label
-- [ ] CPU + / CPU גˆ’ buttons update the CPU gauge live
+- [ ] CPU + / CPU  buttons update the CPU gauge live
 - [ ] Window title matches the `APP_TITLE` state variable
 - [ ] No restart needed to see any of the above
 
@@ -797,17 +797,17 @@ Before the implementation is complete, every item below must pass.
 ## Common Mistakes
 
 **Parser**
-- Splitting on `:` not ` :: ` ג€” breaks colons inside string values
+- Splitting on `:` not ` :: ` -- breaks colons inside string values
 - Forgetting to strip the trailing `\` from state decls and behavior exprs
 - Not handling the case where NOUN and ID are the same word (no space)
 
 **StateStore**
-- Firing subscribers when value did not change ג†’ infinite loop
-- Holding the lock while firing subscribers ג†’ deadlock
+- Firing subscribers when value did not change  infinite loop
+- Holding the lock while firing subscribers  deadlock
 
 **Live bindings**
 - Calling `wire_bindings` before the widget tree is fully mounted
-- Forgetting the `updating` guard ג†’ slider moves ג†’ store.set ג†’ slider moves ג†’ גˆ
+- Forgetting the `updating` guard  slider moves  store.set  slider moves  
 
 **Event dispatch**
 - Evaluating the behavior expression before checking for action names
@@ -818,6 +818,5 @@ Before the implementation is complete, every item below must pass.
 
 ---
 
-*Implement modules 1 ג€“ 9 in any language with any UI toolkit
+*Implement modules 1 -- 9 in any language with any UI toolkit
 and you have a complete, portable GateSyntax runtime.*
-
