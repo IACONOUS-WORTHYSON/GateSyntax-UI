@@ -1,36 +1,15 @@
-# GateSyntax / HERMES User Interface
+# GateSyntax
 
----
+One `.ui` file, seven platforms, zero per-platform changes.
 
-```
-ISSUE \ DECLASSIFICATION NUMBER 8
-THE GATESYNTAX \ HERMES USER INTERFACE
-```
+Designed by Iaconous Worthyson. Licensed under [`LICENSE.md`](./LICENSE.md).
+Provided as-is; see the license for terms.
 
-**Coded by Claude Code -- Designed by IACONOUS WORTHYSON**
-
----
-
-### // YOU ARE HEREBY GRANTED
-
-a piece of an **un-patentable novel architecture** designed by
-*Iaconous Worthyson* -- published under `LICENSE.md` as an
-***as-is*** publication.
-
-**ANY LIABILITY** -- code not coming out correctly; libs not aligning;
-and more -- **IS A *YOU* RESPONSIBILITY.**
-
----
-
-### >> HOW TO USE THIS
-
-The prompt below is for **Claude Code** -- meaning you can simply
-`CTRL+C` && `CTRL+V` and then just run it.
-
-Or copy the code using **GIT** and build it using your own fingers
-clicking on the computer.
-
-*Here it is:*
+This repo also doubles as a build guide: the second half of this file
+is a structured prompt you can hand to Claude Code (or adapt for any
+LLM) to generate a complete GateSyntax runtime from scratch in a
+language and UI toolkit of your choice. Skip to
+[Build Your Own](#build-your-own) if that's what you're after.
 
 ---
 
